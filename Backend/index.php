@@ -31,3 +31,7 @@ switch ($arrayPerm){
 
 include('template/nav.php');
 ?>
+
+<script>
+
+</script>
