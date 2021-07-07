@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+$brand: #EAEEF2;
+$brand-dark: #9099A2;
+$succes: rgb(130, 214, 155);
+$danger: rgb(214, 130, 130);
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.filled{
+    background-color: $brand-dark !important;
+    color: $brand !important;
+}
+nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $brand;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.7em;
+        padding: 0 5px;
+        li{
+            padding: 14px 28px;
+            &:hover{
+                a{
+                    text-decoration: underline;
+                }
+            } 
+            a{
+                color: $brand-dark;
+            }
+            &:nth-child(3){
+                background-color: $brand-dark;
+                display: inline-block;
+                padding: 5px 13px;
+                border-radius: 12px;
+                a{
+                    color: $brand;
+                }
+            }
+        }
+    }
+}
+#searchpanel{
+    width: 100%;
+    padding: 12px;
+    position: fixed;
+    bottom: 65px;
+    left: 0;
+    input[type="text"]{
+        width: 100%;
+        border: 1px solid $brand-dark;
+    }
+}
+#plusPanel{
+    background-color: $brand;
+    text-align: center;
+    border-radius: 8px;
+    position: fixed;
+    bottom: 70px;
+    width: 100%;
+    left: 0;
+    ul{
+        li{
+            padding: 12px 0;
+            &:hover{
+                background-color: $brand-dark;
+                cursor: pointer;
+                a{
+                    color: $brand;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+#login{
+    background-color: $brand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .brand{
+        color: $brand-dark;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input[type="text"], input[type="password"]{
+            margin: 5px auto;
+            border: none;
+            border-radius: 8px;
+            padding: 6px 12px;
+            &.succes{
+                border: 1px solid $succes !important;
+            }
+        }
+        input[type="submit"]{
+            background-color: $brand-dark;
+            border: none;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-size: 1em;
+            padding: 6px 0;
+        }
+    }
+}
+body > header{
+    background-color: $brand;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-end-start-radius: 16px;
+    border-end-end-radius: 16px;
+    color: $brand-dark;
+    h5{
+        font-weight: normal;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .row{
+        &:nth-child(1){ // Site and Bed
+            justify-content: space-between;
+            width: 25%;
+            float: right;
+            align-items: baseline;
+            h5{
+                font-weight: 700;
+            }
+        }
+        &:nth-child(2){ // Patient information
+            align-items: center;
+            img{
+                border-radius: 50%;
+                margin-right: 12px;
+                width: 18%;
+                height: 18%;
+            }
+            span{
+                font-size: .9em;
+            }
+        }
+        &:nth-child(3){
+            .filled{
+                margin-left: 12px;
+            }
+        }
+    }
+}
+main.container{
+    max-width: 95%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    color: $brand-dark;
+    padding: 4px 8px;
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $brand-dark;
+        h4{
+            font-weight: normal;
+        }
+    }
+    .values{
+        padding: 8px 12px;
+        .row{
+            justify-content: space-between;
+            margin-bottom: 12px;
+            &.normal{
+                justify-content: flex-start;
+                .filled{
+                    margin: 0 1px;
+                }
+            }
+        }
+    }
+}
+
+#plusButton{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: $brand;
+    color: $brand-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.4em;
+    z-index: 999;
+    &:hover{
+        cursor: pointer;
+        background-color: $brand-dark;
+        color: $brand;
+    }
+}
+#plusButtonContent{
+    background-color: $brand;
+    border-radius: 20px;
+    width: calc(100% - 60px);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 22px;
+    ul{
+        text-align: center;
+        li{
+            border-bottom: 1px dashed $brand-dark;
+            padding: 6px 0;
+            a{
+                color: $brand-dark;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
