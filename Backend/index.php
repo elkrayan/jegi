@@ -17,12 +17,12 @@ $arrayPerm = array($_GET['pages'], $_SESSION['user']['role']);
 switch ($arrayPerm){
 
     case array(10,0):
-    include('modules/site_liste.php');
-    include('modules/site_add.php');
+        include('modules/site_liste.php');
+        include('modules/site_add.php');
     break;
 
     default:
-    include('modules/patient.php');
+        include('modules/patient.php');
     break;
 
     
