@@ -1,29 +1,35 @@
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-size: 14px;
-    line-height: 1.6;
-    width: 100%;
-    height: 100vh;
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  height: 100vh;
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 /* Navgation */
 ul.vertical {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
-    li {
-        padding: 12px 14px;
-        margin: 10px auto;
-        width: 100%;
-    }
+ul.vertical li {
+  padding: 12px 14px;
+  margin: 10px auto;
+  width: 100%;
 }
 
 /* Typography */
@@ -33,171 +39,206 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
+  font-weight: 700;
+}
 
-    &.filled {
-        background-color: red;
-        color: black;
-        border-radius: 6px;
-        padding: 2px 12px;
-    }
+h1.filled,
+h2.filled,
+h3.filled,
+h4.filled,
+h5.filled,
+h6.filled {
+  background-color: red;
+  color: black;
+  border-radius: 6px;
+  padding: 2px 12px;
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 h2 {
-    font-size: 2.3em;
+  font-size: 2.3em;
 }
 
 h3 {
-    font-size: 1.7em;
+  font-size: 1.7em;
 }
 
 h4 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 p {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* Flexbox */
 .row {
-    display: flex;
-    flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .start {
-    display: flex;
-    justify-content: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
 }
 
 .end {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 /* Component */
 .container {
-    width: 100%;
-    max-width: 85%;
-    margin: auto;
+  width: 100%;
+  max-width: 85%;
+  margin: auto;
 }
 
 .user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-    .avatar {
-        background-color: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65px;
-        height: 65px;
-        font-size: 1.7em;
-        font-weight: 700;
+.user .avatar {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 65px;
+  font-size: 1.7em;
+  font-weight: 700;
+}
 
-        &.circle {
-            border-radius: 50%;
-        }
-    }
+.user .avatar.circle {
+  border-radius: 50%;
 }
 
 .btn {
-    border-radius: 16px;
-    padding: 5px 24px;
-    text-transform: uppercase;
-    font-weight: 600;
-    border: none;
+  border-radius: 16px;
+  padding: 5px 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+}
 
-    &.not-focus {
-        color: #A7A7A7;
+.btn.not-focus {
+  color: #A7A7A7;
+}
 
-        &:hover {
-            background-color: #ececec;
-        }
-    }
+.btn.not-focus:hover {
+  background-color: #ececec;
+}
 
-    &.theme {
-        color: #fff;
-    }
+.btn.theme {
+  color: #fff;
 }
 
 .filter {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: rgba($color: #000000, $alpha: .3);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .popup {
-    background-color: red;
-    width: 70%;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    border-radius: 18px;
-    padding: 12px 16px;
+  background-color: red;
+  width: 70%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 18px;
+  padding: 12px 16px;
 }
 
 /* Form */
 button {
-    width: 100%;
-    border-radius: 5px !important;
+  width: 100%;
+  border-radius: 5px !important;
 }
 
-input {
-
-    &[type="text"],
-    &[type="password"],
-    &[type="number"] {
-        border: none;
-        border-radius: 8px;
-        padding: 6px 12px;
-    }
+input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
 }
 
 /* Var */
 .disable {
-    display: none !important;
+  display: none !important;
 }
 
 .enable {
-    display: none;
+  display: none;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+/*# sourceMappingURL=master.css.map */

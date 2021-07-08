@@ -1,7 +1,11 @@
 <body id="listSite">
     <main>
 <?php
-$req = $bdd->query("SELECT nom, id FROM site ");
+$patWarning = 0;
+$patDanger = 0;
+
+$req = $bdd->query("SELECT nom, id FROM site");
+$dangerOuPas = $bdd->query("SELECT")
 
 
 while($site = $req->fetch(PDO::FETCH_ASSOC)){

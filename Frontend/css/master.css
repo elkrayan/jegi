@@ -107,9 +107,9 @@ em {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
 }
 
 .end {
@@ -223,7 +223,7 @@ button {
   border-radius: 5px !important;
 }
 
-input[type="text"], input[type="password"], input[type="number"] {
+input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
   border: none;
   border-radius: 8px;
   padding: 6px 12px;

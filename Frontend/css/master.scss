@@ -84,7 +84,7 @@ em {
 
 .start {
     display: flex;
-    justify-content: start;
+    justify-content: start !important;
 }
 
 .end {
@@ -182,7 +182,8 @@ input {
 
     &[type="text"],
     &[type="password"],
-    &[type="number"] {
+    &[type="number"], 
+    &[type="date"] {
         border: none;
         border-radius: 8px;
         padding: 6px 12px;
