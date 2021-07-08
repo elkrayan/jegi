@@ -25,8 +25,9 @@ switch ($arrayPerm){
     include('modules/patient_liste.php');
     break;
 
-    case array(30,0):
-    include('modules/test.php');
+    case array(21,0):
+    case array(21,3):
+    include('modules/patient.php');
     break;
     default:
     include('modules/site_liste.php');

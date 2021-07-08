@@ -12,7 +12,7 @@ $req = $bdd->prepare("	SELECT  patient.nom AS nom, patient.prenom AS prenom, sit
                 ORDER BY parametre.id
                 desc
                 LIMIT 1");
-$id = 2;
+$id = $_GET['patient_id'];
 $req->execute(array(
 	'id' => $id));
 $patient = $req->fetch();

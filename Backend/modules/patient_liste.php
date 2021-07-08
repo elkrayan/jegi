@@ -19,7 +19,7 @@ while($patient = $req->fetch(PDO::FETCH_ASSOC)){
     $aujourdhui = date("Y-m-d");
     $age = date_diff(date_create($dateNaissance), date_create($aujourdhui));
 
-    echo'<a href="" class="">
+    echo'<a href="index.php?pages=21&patient_id='.$patient['id'].'" class="">
     <div class="content">
         <h3 class="title">'.$patient['nom'].' '.$patient['prenom'].'</h3>
         <h4>'.$age->format('%y').' ans<span> ('.$patient['ddn'].')</span></h4>
