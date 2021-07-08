@@ -8,12 +8,20 @@ body {
   color: #EAEEF2 !important;
 }
 
+.bg.danger {
+  background-color: #EFBFBF !important;
+}
+
+.bg.warning {
+  background-color: #EFDCBF !important;
+}
+
 .danger {
-  color: #e77474;
+  color: #EFBFBF !important;
 }
 
 .warning {
-  color: #d6ab82;
+  color: #EFDCBF !important;
 }
 
 button:hover {
