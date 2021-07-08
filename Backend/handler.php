@@ -1,7 +1,8 @@
 <?php
 if(isset($_POST['action'])){
     switch($_POST['action']){
-        default:
+        case 'site_add':
+        include('action/site_add.php');
         break;
     }
 }

@@ -1,5 +1,15 @@
 <body id="listSite">
     <main>
+<?php
+$reqAntecedant = $bdd->prepare("SELECT * FROM antecedent WHERE patient_id = :id");
+$reqAntecedant->execute(array(
+	'id' => $id));
+;
+$antecedentString = '';
+while($antecedent = $reqAntecedant->fetch(PDO::FETCH_ASSOC)){
+    $antecedentString .= '<h4 class="filled">'.$antecedent['antecedent'].'</h4>';
+}
+?>
         <a href="">
             <div class="content">
                 <h3 class="title">ULB</h3>

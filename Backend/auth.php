@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['password']) || isset($_POST['login'])){
+if(isset($_POST['password']) && isset($_POST['login'])){
 //Vérification de l'existence du couple login/mdp
 $req = $bdd->prepare('SELECT * FROM user WHERE login = :login AND password = :password ');
 $req->execute(array(

@@ -17,12 +17,12 @@ switch ($arrayPerm){
     
     case array(10,3):
     case array(10,0):
-    include('modules/site_liste.php');
+    include('modules/site_add.php');
     
     break;
 
     default:
-    include('modules/site_add.php');
+    include('modules/site_liste.php');
     break;
 
     
