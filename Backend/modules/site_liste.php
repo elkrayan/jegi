@@ -1,35 +1,23 @@
 <body id="listSite">
     <main>
 <?php
-$reqAntecedant = $bdd->prepare("SELECT * FROM antecedent WHERE patient_id = :id");
-$reqAntecedant->execute(array(
-	'id' => $id));
-;
-$antecedentString = '';
-while($antecedent = $reqAntecedant->fetch(PDO::FETCH_ASSOC)){
-    $antecedentString .= '<h4 class="filled">'.$antecedent['antecedent'].'</h4>';
+$req = $bdd->query("SELECT nom FROM site ");
+
+
+while($site = $req->fetch(PDO::FETCH_ASSOC)){
+    echo '<a href="">
+    <div class="content">
+        <h3 class="title">'.$site['nom'].'</h3>
+        <h4>63 personnes</h4>
+    </div>
+    <footer>
+        <h4 class="warning"><i class="fas fa-exclamation-triangle"></i> 3</h4>
+        <h4 class="danger"><i class="fas fa-exclamation-circle"></i> 1</h4>
+    </footer>
+</a>';
 }
+
 ?>
-        <a href="">
-            <div class="content">
-                <h3 class="title">ULB</h3>
-                <h4>63 personnes</h4>
-            </div>
-            <footer>
-                <h4 class="warning"><i class="fas fa-exclamation-triangle"></i> 3</h4>
-                <h4 class="danger"><i class="fas fa-exclamation-circle"></i> 1</h4>
-            </footer>
-        </a>
-        <a href="">
-            <div class="content">
-                <h3 class="title">VUB</h3>
-                <h4>84 personnes</h4>
-            </div>
-        </a>
-        <a href="">
-            <div class="content">
-                <h3 class="title">beguinage </h3>
-                <h4>84 personnes</h4>
-            </div>
-        </a>
+        
+
     </main>
