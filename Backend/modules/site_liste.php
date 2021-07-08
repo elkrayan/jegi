@@ -9,7 +9,7 @@ $dangerOuPas = $bdd->query("SELECT")
 
 
 while($site = $req->fetch(PDO::FETCH_ASSOC)){
-    echo '<a href="index.php?">
+    echo '<a href="index.php?pages=20&site_id='.$site['id'].'">
     <div class="content">
         <h3 class="title">'.$site['nom'].'</h3>
         <h4>63 personnes</h4>
