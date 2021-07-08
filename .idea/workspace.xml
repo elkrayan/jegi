@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0600a45-3d47-41ce-84a8-783405586a3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend/modules/parametre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/modules/site_liste.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/modules/site_liste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/public/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/css/master.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/modules/new_pat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +16,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uzyMkRveqjLfDVuS9T0pnn1jQ5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -71,5 +65,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
