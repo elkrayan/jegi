@@ -31,4 +31,6 @@ switch ($arrayPerm){
 include('template/nav.php');
 ?>
 
-<script type="text/javascript" src="public/js/app.js">
+<script type="text/javascript" src="public/js/app.js"></script>
+</body>
+</html>
