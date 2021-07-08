@@ -18,8 +18,11 @@ switch ($arrayPerm){
     case array(10,3):
     case array(10,0):
     include('modules/site_add.php');
-    
     break;
+
+    case array(20,0):
+    case array(20,3):
+    include('modules/patient_liste.php');
 
     default:
     include('modules/site_liste.php');

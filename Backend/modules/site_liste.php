@@ -1,11 +1,11 @@
 <body id="listSite">
     <main>
 <?php
-$req = $bdd->query("SELECT nom FROM site ");
+$req = $bdd->query("SELECT nom, id FROM site ");
 
 
 while($site = $req->fetch(PDO::FETCH_ASSOC)){
-    echo '<a href="">
+    echo '<a href="index.php?">
     <div class="content">
         <h3 class="title">'.$site['nom'].'</h3>
         <h4>63 personnes</h4>
