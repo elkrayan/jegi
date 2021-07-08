@@ -14,7 +14,8 @@ include('template/head.php');
 $arrayPerm = array($_GET['pages'], $_SESSION['user']['role']);
 
 switch ($arrayPerm){
-
+    
+    case array(10,3):
     case array(10,0):
     include('modules/site_liste.php');
     
