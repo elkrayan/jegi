@@ -8,12 +8,20 @@ body {
   color: #EAEEF2 !important;
 }
 
+.bg.danger {
+  background-color: #EFBFBF !important;
+}
+
+.bg.warning {
+  background-color: #EFDCBF !important;
+}
+
 .danger {
-  color: #e77474;
+  color: #EFBFBF !important;
 }
 
 .warning {
-  color: #d6ab82;
+  color: #EFDCBF !important;
 }
 
 button:hover {
@@ -106,7 +114,7 @@ nav ul li:nth-child(3) a {
   text-decoration: underline;
 }
 
-form {
+form .form-container {
   background-color: #EAEEF2;
   margin-top: 25px;
   padding: 12px 16px;
@@ -121,10 +129,26 @@ form .form-item {
   width: 100%;
 }
 
+form .form-item input {
+  width: 100%;
+}
+
+form .form-item .row, form .form-item .col {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 form .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 form .row .form-item {

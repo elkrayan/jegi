@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0600a45-3d47-41ce-84a8-783405586a3c" name="Default Changelist" comment="" />
+    <list default="true" id="c0600a45-3d47-41ce-84a8-783405586a3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend/modules/parametre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/modules/site_liste.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/modules/site_liste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/public/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
