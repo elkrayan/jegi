@@ -8,6 +8,18 @@ body {
   color: #EAEEF2 !important;
 }
 
+.danger {
+  color: #e77474;
+}
+
+.warning {
+  color: #d6ab82;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
 nav {
   position: fixed;
   bottom: 0;
@@ -94,6 +106,36 @@ nav ul li:nth-child(3) a {
   text-decoration: underline;
 }
 
+form {
+  background-color: #EAEEF2;
+  margin-top: 25px;
+  padding: 12px 16px;
+  border-radius: 12px;
+}
+
+form .form-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px 3px;
+  width: 100%;
+}
+
+form .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .row .form-item {
+  margin-top: 0 !important;
+}
+
+form button {
+  margin-top: 12px;
+}
+
+/* Page Styling */
 #login {
   background-color: #EAEEF2;
   display: -webkit-box;
@@ -125,14 +167,16 @@ nav ul li:nth-child(3) a {
           flex-direction: column;
 }
 
-#login form input[type="text"], #login form input[type="password"] {
+#login form input[type="text"],
+#login form input[type="password"] {
   margin: 5px auto;
   border: none;
   border-radius: 8px;
   padding: 6px 12px;
 }
 
-#login form input[type="text"].succes, #login form input[type="password"].succes {
+#login form input[type="text"].succes,
+#login form input[type="password"].succes {
   border: 1px solid #82d69b !important;
 }
 
@@ -257,7 +301,118 @@ article .values .row.normal .filled {
   margin: 0 1px;
 }
 
-#plusButton {
+#listSite main > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEEF2;
+  color: #9099A2;
+  width: 100%;
+  padding: 22px 28px;
+  margin: 5px auto;
+  height: calc((100vh / 3 - 35px));
+}
+
+#listSite main > a:hover {
+  background-color: #9099A2;
+  color: #EAEEF2;
+}
+
+#listSite main > a:hover .title {
+  text-decoration: underline;
+}
+
+#listSite main > a .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#listSite main > a .content h3 {
+  text-transform: uppercase;
+}
+
+#listSite main > a footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+#listSite main > a footer h4 {
+  margin: 0 2px;
+}
+
+#listPat main > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEEF2;
+  color: #9099A2;
+  width: 100%;
+  padding: 22px 28px;
+  margin: 5px auto;
+}
+
+#listPat main > a:hover {
+  background-color: #9099A2;
+  color: #EAEEF2;
+}
+
+#listPat main > a:hover .title {
+  text-decoration: underline;
+}
+
+#listPat main > a .content h4 span {
+  font-size: .8em;
+}
+
+#listPat main > a footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#listPat #plusButton {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -279,13 +434,13 @@ article .values .row.normal .filled {
   z-index: 999;
 }
 
-#plusButton:hover {
+#listPat #plusButton:hover {
   cursor: pointer;
   background-color: #9099A2;
   color: #EAEEF2;
 }
 
-#plusButtonContent {
+#listPat #plusButtonContent {
   background-color: #EAEEF2;
   border-radius: 20px;
   width: calc(100% - 60px);
@@ -295,20 +450,20 @@ article .values .row.normal .filled {
   padding: 12px 22px;
 }
 
-#plusButtonContent ul {
+#listPat #plusButtonContent ul {
   text-align: center;
 }
 
-#plusButtonContent ul li {
+#listPat #plusButtonContent ul li {
   border-bottom: 1px dashed #9099A2;
   padding: 6px 0;
 }
 
-#plusButtonContent ul li a {
+#listPat #plusButtonContent ul li a {
   color: #9099A2;
 }
 
-#plusButtonContent ul li:hover {
+#listPat #plusButtonContent ul li:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=app.css.map */
