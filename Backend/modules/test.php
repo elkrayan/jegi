@@ -1,5 +1,9 @@
 <?php
-echo 'empty -2</br>';
-echo '<a href="deconnexion.php">deconnexion</a>';
+if (riskAssessment('2')==false){
+    echo 'false';
+}
+if (riskAssessment('2')==true){
+    echo 'true';
+}
 
 ?>
