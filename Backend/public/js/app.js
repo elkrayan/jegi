@@ -1,7 +1,6 @@
 window.onload = () => {
     openSearchBar();
     openPlusPanel();
-    console.log('GI');
 };
 
 let openSearchBar = () => {
@@ -19,5 +18,5 @@ let openPlusPanel = () => {
     openPlusBtn.addEventListener('click', () =>{
         plusPanel.classList.toggle('disable');
         document.querySelector('#openPlusBtn i.fas').classList.toggle('fa-times')
-    });
-};
+    })
+}

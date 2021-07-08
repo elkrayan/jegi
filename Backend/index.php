@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require('config/sql.php');
 require('config/class.php');
@@ -17,12 +16,12 @@ $arrayPerm = array($_GET['pages'], $_SESSION['user']['role']);
 switch ($arrayPerm){
 
     case array(10,0):
-        include('modules/site_liste.php');
-        include('modules/site_add.php');
+    include('modules/site_liste.php');
+    include('modules/site_add.php');
     break;
 
     default:
-        include('modules/patient.php');
+    include('modules/patient.php');
     break;
 
     
@@ -32,6 +31,4 @@ switch ($arrayPerm){
 include('template/nav.php');
 ?>
 
-<script>
-
-</script>
+<script type="text/javascript" src="public/js/app.js">

@@ -27,7 +27,7 @@ if($req->rowCount()==1){
 $req->closeCursor();
 }
 
-elseif(!isset($_SESSION['login']) OR !isset($_SESSION['user'])){
+elseif(!isset($_SESSION['user'])){
     include('template/head.php');
 	include('template/login.php');
 	exit();

@@ -17,5 +17,3 @@
         <li><a href=""><i class="fas fa-user"></i></a></li>
     </ul>
 </nav>
-<script type="text/javascript" src="public/js/app.js">
-</body>

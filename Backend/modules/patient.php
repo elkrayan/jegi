@@ -2,7 +2,7 @@
 
 $req = $bdd->prepare("	SELECT  patient.nom AS nom, patient.prenom AS prenom, site.nom AS site, patient.lit AS lit, patient.poids AS poids_initial,patient.ddn AS ddn, 
                         parametre.systolique AS systolique, parametre.diastolique AS diastolique, parametre.temp AS temp, parametre.poids AS poids, 
-                        parametre.saturation AS saturation, parametre.glycemie AS glycemie, parametre.frequence AS frequence, parametre.date AS lastvisite
+                        parametre.saturation AS saturation, parametre.glycemie AS glycemie, parametre.frequence AS frequence, parametre.date AS lastvisite,parametre.com AS commentaire
                 FROM patient
                 JOIN parametre
                     ON parametre.patient_id = patient.id
@@ -12,11 +12,30 @@ $req = $bdd->prepare("	SELECT  patient.nom AS nom, patient.prenom AS prenom, sit
                 ORDER BY parametre.id
                 desc
                 LIMIT 1");
-
 $id = 2;
 $req->execute(array(
 	'id' => $id));
 $patient = $req->fetch();
+
+$reqAntecedant = $bdd->prepare("SELECT * FROM antecedent WHERE patient_id = :id");
+$reqAntecedant->execute(array(
+	'id' => $id));
+;
+$antecedentString = '';
+while($antecedent = $reqAntecedant->fetch(PDO::FETCH_ASSOC)){
+    $antecedentString .= '<h4 class="filled">'.$antecedent['antecedent'].'</h4>';
+}
+
+$reqTrtm = $bdd->prepare("SELECT * FROM traitement WHERE patient_id = :id");
+$reqTrtm->execute(array(
+	'id' => $id));
+
+$trtmString = '';
+while($trtm = $reqTrtm->fetch(PDO::FETCH_ASSOC)){
+    $trtmString .= '<h4 class="filled">'.$trtm['traitement'].'</h4>';
+}
+
+
 $dateNaissance = $patient['ddn'];
 $aujourdhui = date("Y-m-d");
 $age = date_diff(date_create($dateNaissance), date_create($aujourdhui));
@@ -34,7 +53,7 @@ $perte_poids=($patient['poids_initial']-$patient['poids'])/$patient['poids_initi
             </div>
             <div class="row start">
                 <div class="col">
-                    <h4><?php echo $patient['nom']. ''.$patient['prenom'];?></h4>
+                    <h4><?php echo $patient['nom']. ' '.$patient['prenom'];?></h4>
                     <h5><?php echo $age->format('%y');?>ans <span class="birthdate">(<?php echo $patient['ddn'];?>)</span></h5>
                 </div>
             </div>
@@ -60,7 +79,7 @@ $perte_poids=($patient['poids_initial']-$patient['poids'])/$patient['poids_initi
 
                <!-- BPM -->
                <div class="row">
-                   <h4>Fréquance</h4>
+                   <h4>Fréquence</h4>
                    <p><?php echo $patient['frequence']; ?></p>
                 </div>
 
@@ -102,8 +121,8 @@ $perte_poids=($patient['poids_initial']-$patient['poids'])/$patient['poids_initi
             </header>
             <div class="values">
                 <div class="row normal">
-                    <h4 class="filled">Diabète</h4>
-                    <h4 class="filled">Epileptique</h4>
+                    
+                <?php echo $antecedentString ;?>
                 </div>
             </div>
         </article>
@@ -114,8 +133,7 @@ $perte_poids=($patient['poids_initial']-$patient['poids'])/$patient['poids_initi
             </header>
             <div class="values">
                 <div class="row normal">
-                    <h4 class="filled">MEDIC 1</h4>
-                    <h4 class="filled">MEDIC 2</h4>
+                   <?php echo $trtmString; ?>
                 </div>
             </div>
         </article>
