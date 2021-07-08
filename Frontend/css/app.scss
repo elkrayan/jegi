@@ -3,8 +3,8 @@
 $brand: #EAEEF2;
 $brand-dark: #9099A2;
 $succes: rgb(130, 214, 155);
-$warning: rgb(214, 171, 130);
-$danger: rgb(231, 116, 116);
+$warning: #EFDCBF;
+$danger: #EFBFBF;
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -14,13 +14,20 @@ body {
     background-color: $brand-dark !important;
     color: $brand !important;
 }
-
+.bg{
+    &.danger{
+        background-color: $danger !important;
+    }
+    &.warning{
+        background-color: $warning !important;
+    }
+}
 .danger {
-    color: $danger;
+    color: $danger !important;
 }
 
 .warning {
-    color: $warning;
+    color: $warning !important;
 }
 
 button {
