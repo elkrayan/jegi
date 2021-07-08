@@ -14,10 +14,12 @@ body {
     background-color: $brand-dark !important;
     color: $brand !important;
 }
-.danger{
+
+.danger {
     color: $danger;
 }
-.warning{
+
+.warning {
     color: $warning;
 }
 
@@ -267,7 +269,7 @@ article {
 }
 
 #listSite {
-    main > a {
+    main>a {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -278,79 +280,118 @@ article {
         padding: 22px 28px;
         margin: 5px auto;
         height: calc((100vh / 3 - 35px));
-        &:hover{
+
+        &:hover {
             background-color: $brand-dark;
             color: $brand;
-            .title{
+
+            .title {
                 text-decoration: underline;
             }
         }
-        .content{
+
+        .content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            h3{
+
+            h3 {
                 text-transform: uppercase;
             }
         }
-        footer{
+
+        footer {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: center;
             margin-top: 15px;
-            h4{
+
+            h4 {
                 margin: 0 2px;
             }
         }
     }
 }
 
-#plusButton {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: $brand;
-    color: $brand-dark;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 1.4em;
-    z-index: 999;
+#listPat {
+    main>a {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $brand;
+        color: $brand-dark;
+        width: 100%;
+        padding: 22px 28px;
+        margin: 5px auto;
+        &:hover {
+            background-color: $brand-dark;
+            color: $brand;
 
-    &:hover {
-        cursor: pointer;
-        background-color: $brand-dark;
-        color: $brand;
-    }
-}
-
-#plusButtonContent {
-    background-color: $brand;
-    border-radius: 20px;
-    width: calc(100% - 60px);
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    padding: 12px 22px;
-
-    ul {
-        text-align: center;
-
-        li {
-            border-bottom: 1px dashed $brand-dark;
-            padding: 6px 0;
-
-            a {
-                color: $brand-dark;
-            }
-
-            &:hover {
+            .title {
                 text-decoration: underline;
+            }
+        }
+        .content{
+            h4{
+                span{
+                    font-size: .8em;
+                }
+            }
+        }
+        footer{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    #plusButton {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: $brand;
+        color: $brand-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        font-size: 1.4em;
+        z-index: 999;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $brand-dark;
+            color: $brand;
+        }
+    }
+
+    #plusButtonContent {
+        background-color: $brand;
+        border-radius: 20px;
+        width: calc(100% - 60px);
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        padding: 12px 22px;
+
+        ul {
+            text-align: center;
+
+            li {
+                border-bottom: 1px dashed $brand-dark;
+                padding: 6px 0;
+
+                a {
+                    color: $brand-dark;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -371,7 +371,48 @@ article .values .row.normal .filled {
   margin: 0 2px;
 }
 
-#plusButton {
+#listPat main > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EAEEF2;
+  color: #9099A2;
+  width: 100%;
+  padding: 22px 28px;
+  margin: 5px auto;
+}
+
+#listPat main > a:hover {
+  background-color: #9099A2;
+  color: #EAEEF2;
+}
+
+#listPat main > a:hover .title {
+  text-decoration: underline;
+}
+
+#listPat main > a .content h4 span {
+  font-size: .8em;
+}
+
+#listPat main > a footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#listPat #plusButton {
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -393,13 +434,13 @@ article .values .row.normal .filled {
   z-index: 999;
 }
 
-#plusButton:hover {
+#listPat #plusButton:hover {
   cursor: pointer;
   background-color: #9099A2;
   color: #EAEEF2;
 }
 
-#plusButtonContent {
+#listPat #plusButtonContent {
   background-color: #EAEEF2;
   border-radius: 20px;
   width: calc(100% - 60px);
@@ -409,20 +450,20 @@ article .values .row.normal .filled {
   padding: 12px 22px;
 }
 
-#plusButtonContent ul {
+#listPat #plusButtonContent ul {
   text-align: center;
 }
 
-#plusButtonContent ul li {
+#listPat #plusButtonContent ul li {
   border-bottom: 1px dashed #9099A2;
   padding: 6px 0;
 }
 
-#plusButtonContent ul li a {
+#listPat #plusButtonContent ul li a {
   color: #9099A2;
 }
 
-#plusButtonContent ul li:hover {
+#listPat #plusButtonContent ul li:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=app.css.map */
