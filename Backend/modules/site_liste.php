@@ -5,7 +5,7 @@ $patWarning = 0;
 $patDanger = 0;
 
 $req = $bdd->query("SELECT nom, id FROM site");
-$dangerOuPas = $bdd->query("SELECT")
+$dangerOuPas = $bdd->query("SELECT");
 
 
 while($site = $req->fetch(PDO::FETCH_ASSOC)){
