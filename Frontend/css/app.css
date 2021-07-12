@@ -490,4 +490,8 @@ article .values .row.normal .filled {
 #listPat #plusButtonContent ul li:hover {
   text-decoration: underline;
 }
+
+#overview article {
+  width: 100%;
+}
 /*# sourceMappingURL=app.css.map */

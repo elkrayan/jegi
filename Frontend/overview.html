@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeGi</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://kit.fontawesome.com/28a8f913f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+    <script src="./js/chart.js"></script>
+</head>
+<body id="overview">
+    <header>
+        <div class="container">
+            <h2>Dashboard</h2>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <article>
+                <header>
+                    <h3 class="title">Vue globale</h3>
+                    <h4>23 juillet 2021</h4>
+                </header>
+                <div class="values">
+                    <canvas id="globalChart"></canvas>
+                </div>
+            </article>
+        </div>
+
+        <div class="col">
+            <article>
+                <header>
+                    <h2 class="title">ULB</h2>
+                </header>
+                <div class="values">
+                    <canvas id="ulbChart"></canvas>
+                </div>
+            </article>
+
+            <article>
+                <header>
+                    <h2 class="title">VUB</h2>
+                </header>
+                <div class="values">
+                    <canvas id="vubChart"></canvas>
+                </div>
+            </article
+            >
+            <article>
+                <header>
+                    <h2 class="title">Béguinage</h2>
+                </header>
+                <div class="values">
+                    <canvas id="beguinageChart"></canvas>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
