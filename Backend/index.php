@@ -14,24 +14,30 @@ include('template/head.php');
 $arrayPerm = array($_GET['pages'], $_SESSION['user']['role']);
 
 switch ($arrayPerm){
-    
-    case array(10,3):
     case array(10,0):
-    include('modules/site_add.php');
-    break;
+    case array(10,3):
+        include ('./modules/site_add.php');
+        break;
 
     case array(20,0):
     case array(20,3):
-    include('modules/patient_liste.php');
-    break;
+        include ('./modules/patient_add.php');
+        break;
 
     case array(21,0):
     case array(21,3):
-    include('modules/patient.php');
-    break;
+        include('modules/patient.php');
+        break;
+
+    case array(23,0):
+    case array(23,3):
+        include('modules/patient_liste.php');
+        break;
+
+
     default:
-    include('modules/site_liste.php');
-    break;
+        include('modules/site_liste.php');
+        break;
 
     
 

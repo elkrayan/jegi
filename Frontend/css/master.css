@@ -224,10 +224,15 @@ button {
   border-radius: 5px !important;
 }
 
+select {
+  border-radius: 8px;
+  padding: 6px 4px;
+}
+
 input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
   border: none;
   border-radius: 8px;
-  padding: 6px 12px;
+  padding: 6px 4px;
 }
 
 /* Var */

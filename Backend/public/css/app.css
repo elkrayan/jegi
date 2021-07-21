@@ -129,8 +129,9 @@ form .form-item {
   width: 100%;
 }
 
-form .form-item input {
+form .form-item input, form .form-item select {
   width: 100%;
+  border: 1px solid #9099A2;
 }
 
 form .form-item .row, form .form-item .col {
@@ -221,6 +222,7 @@ body > header {
   border-end-start-radius: 16px;
   border-end-end-radius: 16px;
   color: #9099A2;
+  margin-bottom: 22px;
 }
 
 body > header h5 {
@@ -489,5 +491,9 @@ article .values .row.normal .filled {
 
 #listPat #plusButtonContent ul li:hover {
   text-decoration: underline;
+}
+
+#overview article {
+  width: 100%;
 }
 /*# sourceMappingURL=app.css.map */

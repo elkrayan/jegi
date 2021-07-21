@@ -129,8 +129,9 @@ form {
         justify-content: flex-start;
         margin: 10px 3px;
         width: 100%;
-        input{
+        input, select{
             width: 100%;
+            border: 1px solid $brand-dark;
         }
         .row, .col{
             justify-content: space-between;
@@ -199,6 +200,7 @@ body>header {
     border-end-start-radius: 16px;
     border-end-end-radius: 16px;
     color: $brand-dark;
+    margin-bottom: 22px;
 
     h5 {
         font-weight: normal;

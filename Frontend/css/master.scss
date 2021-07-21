@@ -179,16 +179,18 @@ button {
     width: 100%;
     border-radius: 5px !important;
 }
-
+select{
+    border-radius: 8px;
+    padding: 6px 4px;
+}
 input {
-
     &[type="text"],
     &[type="password"],
     &[type="number"], 
-    &[type="date"] {
+    &[type="date"]{
         border: none;
         border-radius: 8px;
-        padding: 6px 12px;
+        padding: 6px 4px;
     }
 }
 

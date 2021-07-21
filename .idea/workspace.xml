@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0600a45-3d47-41ce-84a8-783405586a3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Backend/modules/site_liste.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/modules/site_liste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/action/patient_add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/modules/patient_add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/action/site_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/action/site_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/modules/new_pat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/modules/site_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/modules/site_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/public/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/public/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/add_pat.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/add_pat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/css/master.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/css/master.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +67,9 @@
       <workItem from="1625682668068" duration="653000" />
       <workItem from="1625762755548" duration="624000" />
       <workItem from="1626102454974" duration="160000" />
+      <workItem from="1626526465968" duration="5559000" />
+      <workItem from="1626789872636" duration="1483000" />
+      <workItem from="1626867229877" duration="5110000" />
     </task>
     <servers />
   </component>
